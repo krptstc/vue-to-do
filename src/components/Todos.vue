@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-bind:key="todo.id" v-for="todo in todos">
+    <div v-bind:key="todo.id" v-for="todo in todos" todo_prop.sync="todo">
       <TodoItem v-bind:todo="todo"/>
     </div>
   </div>
